@@ -1,0 +1,77 @@
+# Planning for dl4vn
+
+## Purposes 
+The ultimate purpose is to bring Deep Learning to easier level for everyone who interested can refer enough knowledge, fully understand and implement a runnable project.
+
+### For Editors
+  * Practice writing scentific tutorials (it is a good way for practicing writing papers)
+  * Enhance knowledge about coding and understand the paper in a deeper level, not just superficial general idea
+  * Practice reading papers and giving the reviews/comments about the papers, especially choosing the valuable papers for everyone can get benefit
+  * Self promote the editors profile
+
+### For Readers
+
+  * Read the fundamental knowledge about deep learning both theoretical and practical aspects.
+  * Read the chosen papers with reviews/comments, the papers in highly recommended in Deep Learning and its application in Computer Vision, Natural Language Processing, Speech/Audio Recognition and so on
+  * Re-implement the paper’s idea to fully understand the paper with guidance in tutorial
+  * Can have the runable code (mostly in Python) and apply directly to own project
+
+## Contents
+### General contents
+  * Have fundamental knowledge about deep learning and its application
+  * Have tutorial on setting up deep learning framework such as Tensorflow, Theano, Keras, Caffe… and other python libraries for scientific research
+  * Have news about Deep Learning what is the cutting edge researches and state-of-the-art results in some problems
+
+### Paper Contents:
+
+  * Have group of related papers of Deep Learning problem for example object detection, segmentation, image captioning, Sentiment Analysis, Question Answering...
+  * Each paper will have review/comments section which helps reader to get the general idea of the papers (summary), Strength and Weakness. These reviews will be based on Editors's points of view
+  * Will have link to Original papers (mostly on Arxiv) and github code from the authors
+  
+### Tutorial Contents
+  * Help you step by step re-implement some chosen important papers in Deep Learning problems with tutorial
+  * These codes is mostly implemented in Python 
+  * These codes is make sure runnable and can apply directly to reader's own project
+  * Mostly writen in Jupyter Notebook format
+  
+## Website
+### The website's address
+https://dl4vn.github.io/
+
+### Interface 
+Can have format something like Keras, Tensorflow, Theano documentation website.
+
+### Host
+All operations will run on github at these address https://github.com/dl4vn/dl4vn.github.io, Dung will have the script to upload the files to github and automatically display on the website.
+
+### Format
+With General Contents and Paper Contents, we will use Markdown format.
+With Tutorial Contents, we will use Jupyter Notebook format and export to Makrdown format, like this one: https://github.com/dungtn/baby-vqa/blob/master/LSTM_VGG_VQA.ipynb
+
+### Feedback
+Will have section for receiving by using Pull request of github:
+  * Feedback from reader
+  * Suggested important reading papers
+  * Need to have tutorial for important papers
+
+## Administrative
+### Schedule
+  * In the first month/week?, try to complete the General Contents, don't need to write from scratch, can refer to some good links, tutorials already have
+  * News can update every day or every week
+  * Paper Contents can update whenever editors have completed reading new papers and write comments/reviews
+  * Tutorial Contents can update whenver new paper have succesfully implemented in Python and its deep learning framework.
+  
+### Editors
+  * Chief Editors:
+    - Dung Thai: Deep Learning in NLP
+    - Khoi Nguyen: Deep Learning in CV
+    - Kien Huynh: Deep Learning in CV
+    - Need somebody work in Deep Learning in General/Theory/Architecture
+  * Volunteer Editors:
+    - Update news 
+    - Write Paper's review/comments
+    - Implement important papers
+    
+### Communication
+Base on Github repository of the website, Facebook group
+
