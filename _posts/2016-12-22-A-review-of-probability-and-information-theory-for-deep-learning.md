@@ -1,4 +1,3 @@
-# A review of probability and information theory for deep learning
 *~ based on Chapter 3, Deep Learning by Ian Goodfellow et. al.*
 
 This note provides a quick glance to probability and information theory in their relations to deep learning. In particular, their theoretical roles, some common concepts and definitions as well as pointer to some futher readings.
