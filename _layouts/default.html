@@ -5,7 +5,18 @@
    <title>{{ page.title }} - {{ site.title }}</title>
    <link rel="stylesheet" type="text/css" href="{{ site.path }}/css/style.css" >
    <link rel="alternate" type="application/atom+xml" href="{{ site.path }}/feed.xml" title="News Feed">
-   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+   <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+   </script>
+
+   <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+   </script>
 </head>
 <body>
 

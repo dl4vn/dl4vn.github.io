@@ -8,39 +8,56 @@ This note provides a quick glance to probability and information theory in their
 
 ## 1 Probability theory
 Motivations
+
 - represent simple but uncertain rules which are better than a complex but certain one e.g. "Most birds fly" vs. "Birds ﬂy, except for very young birds that have not yet learned toﬂy, sick or injured birds that have lost the ability to ﬂy..."
+
 - represent and reason about qualitative levels of certainty (degree of belief)
+
 - extend logic to deal with uncertainty
 
 ### 1.1 Definitions
-**Probability Mass Function (PMF)** describes a probability distribution over discrete random variables \(X\), denoted \(P(X)\).
-- domain of \(P\) is set of all possible states of \(X\)
-- \(\forall x \in X, 0 \leq P(x) \leq 1\)
-- \(\sum_{x \in X} P(x) = 1\)
+**Probability Mass Function (PMF)** describes a probability distribution over discrete random variables {% raw %} $X$ {% endraw %}, denoted {% raw %} $P(X)$ {% endraw %}.
 
-**Probability Density Function (PDF)** describes a probability distribution over continuous random variables \(X\), denoted \(p(X)\).
-- domain of \(p\) is set of all possible states of \(X\)
-- \(\forall x \in X, p(x) \geq 0\)
-- \(\int p(x) dx = 1\)
+- domain of {% raw %} $P$ {% endraw %} is set of all possible states of {% raw %} $X$ {% endraw %}
 
-**Marginal probability** is the probability distribution over the subset of random variables e.g. given the joint distribution \(P(x, y)\), we usually interest in the marginal probability \(P(x)\)
-- sum rule \(\forall x \in X, P(X=x) = \sum_{y} P(X=x, Y=y)\)
+- {% raw %} $\forall x \in X, 0 \leq P(x) \leq 1$ {% endraw %}
+
+- {% raw %} $\sum_{x \in X} P(x) = 1$ {% endraw %}
+
+**Probability Density Function (PDF)** describes a probability distribution over continuous random variables {% raw %} $X$ {% endraw %}, denoted {% raw %} $p(X)$ {% endraw %}.
+
+- domain of {% raw %} $p$ {% endraw %} is set of all possible states of {% raw %} $X$ {% endraw %}
+
+- {% raw %} $\forall x \in X, p(x) \geq 0$ {% endraw %}
+
+- {% raw %} $\int p(x) dx = 1$ {% endraw %}
+
+**Marginal probability** is the probability distribution over the subset of random variables e.g. given the joint distribution {% raw %} $P(x, y)$ {% endraw %}, we usually interest in the marginal probability {% raw %} $P(x)$ {% endraw %}
+
+- sum rule {% raw %} $\forall x \in X, P(X=x) = \sum_{y} P(X=x, Y=y)$ {% endraw %}
 
 **Conditional probability** is the probability of some event, given that some other event has happened
-- \(P(Y=y \mid X=x) = \frac{P(Y=y, X=x)}{P(X=x)}\)
+
+- {% raw %} $P(Y=y \mid X=x) = \frac{P(Y=y, X=x)}{P(X=x)}$ {% endraw %}
 
 **Chain rule of conditional probabilities**
-- \(P(x^{(1)},...,x^{(n)}) = P(x^{(1)}) \prod_{i=2}^{n} P(x^{(i)} \mid x^{(1)},...,x^{(i-1)})\)
 
-**Expectation (expected value)** is the average or mean value that \(f\) takes on when \(x\) is drawn from \(P\)
-- \(\mathbb{E}_{x \sim P}[f(x)] = \sum_{x}P(x)f(x)\)
+- {% raw %} $P(x^{(1)},...,x^{(n)}) = P(x^{(1)}) \prod_{i=2}^{n} P(x^{(i)} \mid x^{(1)},...,x^{(i-1)})$ {% endraw %}
 
-**Variance** measures how much the values of \(f(x)\) vary as we sample diﬀerent values of \(x\) from P
-- \(Var(f(x)) = \mathbb{E}[(f(x) - \mathbb{E}[f(x)])^{2}]\)
+**Expectation (expected value)** is the average or mean value that {% raw %} $f$ {% endraw %} takes on when {% raw %} $x$ {% endraw %} is drawn from {% raw %} $P$ {% endraw %}
+
+- {% raw %} $ \mathbb{E}_{x \sim P}[f(x)] = \sum_x P(x)f(x) $ {% endraw %}
+
+**Variance** measures how much the values of {% raw %} $f(x)$ {% endraw %} vary as we sample diﬀerent values of {% raw %} $x$ {% endraw %} from P
+
+- {% raw %} $Var(f(x)) = \mathbb{E}[(f(x) - \mathbb{E}[f(x)])^{2}]$ {% endraw %}
 
 **Covariance** describes how much two values are linearly related to each other
-- \(Cov(f(x), g(y)) = \mathbb{E}[(f(x) - \mathbb{E}[f(x)])(g(y) - \mathbb{E}[g(y)])]\)
+
+- {% raw %} $Cov(f(x), g(y)) = \mathbb{E}[(f(x) - \mathbb{E}[f(x)])(g(y) - \mathbb{E}[g(y)])]$ {% endraw %}
 
 ## Further reading
-- Probability theory http://www.med.mcgill.ca/epidemiology/hanley/bios601/GaussianModel/JaynesProbabilityTheory.pdf
-- Frequentist and Bayesian probability https://core.ac.uk/download/pdf/7048428.pdf
+
+- [Probability theory](http://www.med.mcgill.ca/epidemiology/hanley/bios601/GaussianModel/JaynesProbabilityTheory.pdf)
+
+- [Frequentist and Bayesian probability](https://core.ac.uk/download/pdf/7048428.pdf)
