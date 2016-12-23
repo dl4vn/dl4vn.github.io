@@ -1,4 +1,33 @@
-theme: minima
+###########
+# site.title, site.url, site.author.name
 
-disqus:
-    shortname: dl4vn
+title:   'dl4vn'
+author:
+  name:  'dlvn team'
+
+## note: 
+#  use site.path in your templates to make it work for both protocols e.g. http and https
+#  use site.url only inside the web feed template (e.g. requires full url incl. protocol)
+path: 
+url:  'http://dl4vn.github.io/'
+
+
+########
+# more settings
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+sass:
+  sass_dir: css
+  style:    expanded
+
+permalink: /:title.html
+
+exclude:
+- README.md
+
+paginate: 5

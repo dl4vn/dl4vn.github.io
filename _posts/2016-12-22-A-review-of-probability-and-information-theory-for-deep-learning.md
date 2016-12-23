@@ -1,9 +1,3 @@
----
-title: A review of probability and information theory for deep learning
-layout: post
-comments: true
----
-
 # A review of probability and information theory for deep learning
 *~ based on Chapter 3, Deep Learning by Ian Goodfellow et. al.*
 
