@@ -1,1 +1,4 @@
 theme: minima
+
+disqus:
+    shortname: dl4vn
